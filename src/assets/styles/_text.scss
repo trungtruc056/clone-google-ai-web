@@ -1,0 +1,44 @@
+@import "color";
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.text-default {
+  color: $text-color !important;
+}
+
+.text-w {
+  color: #fff !important;
+}
+
+.text-link {
+  color: $main-color !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.text-r {
+  text-align: right !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-bold {
+  font-weight: bold !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-regular {
+  font-weight: normal !important;
+}

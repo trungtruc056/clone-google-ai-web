@@ -1,0 +1,42 @@
+@import "color";
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.33;
+  letter-spacing: 0.2px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.2px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 1.71;
+}

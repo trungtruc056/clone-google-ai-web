@@ -1,0 +1,47 @@
+@import "color";
+@import "mixin";
+
+.btn {
+  align-items: center;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font: 500 14px "Roboto",Arial,sans-serif;
+  height: 44px;
+  justify-content: center;
+  letter-spacing: .5px;
+  min-width: auto;
+  outline: none;
+  padding: 0 24px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: none;
+  vertical-align: inherit;
+}
+
+.btn-main {
+  background-color: $main-color;
+  color: #fff;
+  @include transition(all 0.3s ease);
+
+  &:hover {
+    background-color: $btn-hover-color;
+  }
+}
+
+.btn-white {
+  background-color: #fff;
+  border: 1px solid $border-btn-color;
+  color: $btn-main-color;
+  font-size: 14px;
+
+  @include transition(all 0.3s ease);
+
+  &:hover {
+    background-color: $btn-white-hover;
+  }
+}

@@ -1,0 +1,29 @@
+// Font Roboto
+@font-face {
+  font-family: Roboto;
+  src: url(~src/assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(~src/assets/fonts/Roboto/Roboto-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+// Font Google Sans
+@font-face {
+  font-family: Google Sans;
+  src: url(~src/assets/fonts/Google-sans/ProductSans-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Google Sans;
+  src: url(~src/assets/fonts/Google-sans/ProductSans-Medium.ttf) format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Google Sans;
+  src: url(~src/assets/fonts/Google-sans/ProductSans-Regular.ttf) format('truetype');
+}
