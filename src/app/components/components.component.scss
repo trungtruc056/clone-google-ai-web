@@ -1,0 +1,26 @@
+.main-content {
+  max-width: 1592px;
+  padding: 0 120px;
+  margin: 0 auto 80px;
+
+  @media (min-width: 1024px) {
+    padding: 0 80px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
+
+  .content-body {
+    margin: 0 0 0 calc(15.1388888889% + 7.5%);
+    padding-top: 0;
+
+    @media (max-width: 1279px) {
+      margin: 0 !important;
+    }
+  }
+}

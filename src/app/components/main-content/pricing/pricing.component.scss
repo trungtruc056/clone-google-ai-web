@@ -1,0 +1,61 @@
+.pricing-component {
+  .pricing-table {
+    background: #f8f9fa;
+    padding: 0 40px;
+    border-radius: 2px;
+    overflow: auto;
+    position: relative;
+
+    table {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 28px;
+      color: #5f6368;
+      width: 100%;
+
+      tr {
+        background: transparent;
+        border-bottom: 1px solid #dadce0;
+        border-top: 0;
+      }
+
+      td {
+        background: transparent;
+        border: 0;
+        width: 184px;
+        padding: 28px 0 28px 24px;
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+
+      thead {
+        tr {
+          border: 0;
+        }
+
+        td:first-child {
+          width: 160px;
+        }
+      }
+
+      tbody {
+        tr:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .table-desc p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .table-desc-small p {
+    font-size: 12.8px;
+    line-height: 28px;
+  }
+}

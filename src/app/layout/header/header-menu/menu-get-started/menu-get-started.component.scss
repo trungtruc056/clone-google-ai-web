@@ -1,0 +1,47 @@
+@import "../../../../../assets/styles/mixin";
+@import "../../../../../assets/styles/color";
+
+.menu-getting-started-component {
+  .menu-dropdown-wrapper {
+    .dropdown-menu-column {
+      &.decoration {
+        background: url(../../../../../assets/images/header/getting-started_bg.svg) no-repeat bottom -1px right 30px/40%;
+
+        .menu-column-content {
+          width: 50%;
+          margin: 40px 20px 12px;
+
+          h3 {
+            font-size: 28px;
+            line-height: 36px;
+            font-weight: 400;
+            margin-bottom: 32px;
+          }
+
+          p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            line-height: 24px;
+            color: #757575;
+          }
+
+          a {
+            color: #1a73e8;
+            font: 14px/22px Google Sans, Arial, sans-serif;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            width: max-content;
+
+            i {
+              margin-left: 5px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

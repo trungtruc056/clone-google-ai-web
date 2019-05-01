@@ -1,0 +1,10 @@
+.menu-solutions-component {
+  .menu-dropdown-wrapper {
+    .dropdown-menu-column {
+      &.decoration {
+        background: url(../../../../../assets/images/header/solutions_bg.svg) no-repeat bottom -1px right 30px/240px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

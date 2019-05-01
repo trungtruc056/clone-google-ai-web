@@ -1,0 +1,69 @@
+@import "../../../../assets/styles/color";
+
+.use-cases-component {
+  .use-cases-body {
+    .tab-block {
+      border-bottom: 1px solid $border-table;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      .tab-item {
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        color: #9aa0a6;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font: 600 14px "Roboto",Arial,sans-serif;
+        height: 100%;
+        line-height: 50px;
+        overflow: hidden;
+        padding: 0;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: none;
+        margin: 0 0 0 25px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:hover {
+          color: $text-color;
+        }
+
+        &.active {
+          position: relative;
+          display: block;
+          color: $text-color;
+
+          &:before {
+            content: '';
+            position: absolute;
+            background-color: #4285f4;
+            bottom: 0;
+            height: 2px;
+            right: 0;
+            width: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      display: none;
+
+      @media(max-width: 768px) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

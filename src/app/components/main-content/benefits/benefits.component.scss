@@ -1,0 +1,29 @@
+.benefits-component {
+  .benefit-block {
+    .benefit-item {
+      padding-bottom: 40px;
+
+      .item-img {
+        width: 92px;
+        height: 92px;
+        margin-bottom: 16px;
+
+        img {
+          width: 100%;
+          max-width: 100%;
+          border: 0;
+        }
+      }
+
+      &:nth-last-child(-n+3) {
+        padding-bottom: 0;
+      }
+
+      @media (max-width: 1023px) {
+        &:nth-last-child(-n+1) {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

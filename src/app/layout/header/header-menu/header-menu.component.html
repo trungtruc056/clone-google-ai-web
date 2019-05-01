@@ -1,3 +1,84 @@
-<p>
-  header-menu works!
-</p>
+<header id="headerWrapper">
+  <div class="header-main">
+    <div class="logo-and-menu-left">
+      <div class="header-logo">
+        <a href="#">
+          <img src="../../../../assets/images/cloud-logo.svg" alt="">
+        </a>
+      </div>
+      <div class="header-menu-left">
+        <ul>
+          <li class="tab-menu-item" (click)="openTabMenu($event, 'menuWhyGoogle')">Why Google</li>
+          <li class="tab-menu-item" (click)="openTabMenu($event, 'menuSolutions')">Solutions</li>
+          <li class="tab-menu-item" (click)="openTabMenu($event, 'menuProducts')">Products</li>
+          <li class="tab-menu-item" (click)="openTabMenu($event, 'menuPricing')">Pricing</li>
+          <li class="tab-menu-item" (click)="openTabMenu($event, 'menuGetStarted')">Getting started</li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-menu-right">
+      <ul>
+        <li>
+          <i class="material-icons">
+            search
+          </i>
+        </li>
+        <li>Docs</li>
+        <li>Support</li>
+        <li>Language</li>
+        <li class="btn-sign-in">Sign in</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab-content-wrapper" id="tabContentWrapper">
+    <div id="menuWhyGoogle" class="tab-menu-content">
+      <div class="top-right" onclick="this.parentElement.style.display='none'">
+              <i class="material-icons" (click)="closeDropdown()">
+        close
+      </i>
+      </div>
+      <app-menu-why-google></app-menu-why-google>
+    </div>
+    <div id="menuSolutions" class="tab-menu-content">
+      <div class="top-right" onclick="this.parentElement.style.display='none'">
+        <i class="material-icons" (click)="closeDropdown()">
+          close
+        </i>
+      </div>
+      <app-menu-solutions></app-menu-solutions>
+      <div class="header-menu-footer">
+        <a href="#">See all solutions</a>
+      </div>
+    </div>
+    <div id="menuProducts" class="tab-menu-content">
+      <div class="top-right" onclick="this.parentElement.style.display='none'">
+        <i class="material-icons" (click)="closeDropdown()">
+          close
+        </i>
+      </div>
+      <app-menu-products></app-menu-products>
+      <div class="header-menu-footer">
+        <a href="#">See all products (100+)</a>
+      </div>
+    </div>
+    <div id="menuPricing" class="tab-menu-content">
+      <div class="top-right" onclick="this.parentElement.style.display='none'">
+        <i class="material-icons" (click)="closeDropdown()">
+          close
+        </i>
+      </div>
+      <app-menu-pricing></app-menu-pricing>
+    </div>
+    <div id="menuGetStarted" class="tab-menu-content">
+      <div class="top-right" onclick="this.parentElement.style.display='none'">
+        <i class="material-icons" (click)="closeDropdown()">
+          close
+        </i>
+      </div>
+      <app-menu-get-started></app-menu-get-started>
+      <div class="header-menu-footer">
+        <a href="#">More ways to get started</a>
+      </div>
+    </div>
+  </div>
+</header>

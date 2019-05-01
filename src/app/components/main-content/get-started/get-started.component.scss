@@ -1,0 +1,13 @@
+@import "../../../../assets/styles/color";
+
+.get-started-component {
+  border-top: 1px solid $border-table;
+
+  .get-started-box {
+    width: 78%;
+  }
+
+  .mb-64.res-mb {
+    margin-bottom: 0 !important;
+  }
+}

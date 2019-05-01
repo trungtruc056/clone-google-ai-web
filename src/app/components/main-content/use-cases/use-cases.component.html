@@ -1,0 +1,49 @@
+<div class="use-cases-component section-border page-section">
+  <div class="component-title">
+    <h2 id="useCases">Use cases</h2>
+  </div>
+  <div class="use-cases-body">
+    <div class="tab-block">
+      <div class="tab-item" id="defaultOpen" (click)="openTabContent($event, 'tab-industrial')">industrial inspection
+      </div>
+      <div class="tab-item" (click)="openTabContent($event, 'tab-vision')">vision product search</div>
+      <div class="tab-item" (click)="openTabContent($event, 'tab-document')">document classification</div>
+      <div class="tab-item" (click)="openTabContent($event, 'tab-image')">Image search</div>
+    </div>
+    <div id="tab-industrial" class="tab-content">
+      <div class="mb-56">
+        <h4>Industrial inspection</h4>
+        <p>Use AutoML Vision Edge to automate the quality control process in manufacturing by enabling edge devices to
+          identify defects. <a href="#" class="text-link">Sign up</a> to learn more about our industrial inspection
+          solution.
+        </p>
+      </div>
+      <img src="../../../../assets/images/use-cases/industrial-inspection.svg" alt="">
+    </div>
+
+    <div id="tab-vision" class="tab-content">
+      <div class="mb-56">
+        <h4>Vision product search</h4>
+        <p>Find products of interest within images and visually search product catalogs using Vision API.</p>
+      </div>
+      <img src="../../../../assets/images/use-cases/visual-product-search.svg" alt="">
+    </div>
+
+    <div id="tab-document" class="tab-content">
+      <div class="mb-56">
+        <h4>Document classification</h4>
+        <p>Access information efficiently by using the Vision and Natural Language APIs to classify, extract, and enrich
+          documents. For more information, see. <a href="#" class="text-link">Document Understanding AI.</a></p>
+      </div>
+      <img src="../../../../assets/images/use-cases/document-classification.svg" alt="">
+    </div>
+
+    <div id="tab-image" class="tab-content">
+      <div class="mb-56">
+        <h4>Image search</h4>
+        <p>Use Vision API and AutoML Vision to make images searchable across broad topics and scenes, including custom categories. <a href="#" class="text-link">Learn more about this solution.</a></p>
+      </div>
+      <img src="../../../../assets/images/use-cases/image-search.svg" alt="">
+    </div>
+  </div>
+</div>

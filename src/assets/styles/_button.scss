@@ -24,12 +24,24 @@
 }
 
 .btn-main {
+  font-weight: bold;
   background-color: $main-color;
   color: #fff;
   @include transition(all 0.3s ease);
 
   &:hover {
     background-color: $btn-hover-color;
+  }
+}
+
+.btn-header {
+  font-weight: bold;
+  background-color: $main-color;
+  color: #fff;
+  @include transition(all 0.3s ease);
+
+  &:hover {
+    background-color: $header-btn-hover;
   }
 }
 
@@ -43,5 +55,19 @@
 
   &:hover {
     background-color: $btn-white-hover;
+  }
+}
+
+.btn-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $btn-main-color;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  @include transition(all 0.3s ease);
+
+  &:hover {
+    color: #174ea6;
   }
 }

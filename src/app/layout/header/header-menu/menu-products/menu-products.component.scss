@@ -1,0 +1,9 @@
+.menu-products-component {
+  .menu-dropdown-wrapper {
+    .dropdown-menu-column {
+      &.decoration {
+        background: url(../../../../../assets/images/header/products_bg.svg) no-repeat bottom -2px right 40px/35%;
+      }
+    }
+  }
+}

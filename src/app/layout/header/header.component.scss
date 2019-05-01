@@ -1,0 +1,28 @@
+@import "../../../assets/styles/mixin";
+
+.menu-header-wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 10000;
+  @include box-shadow(0px 2px 6px 0px rgba(0,0,0,.12));
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.header-mobile-wrapper {
+  display: none;
+
+  @media (max-width: 991px) {
+    display: block;
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    z-index: 10000;
+    @include box-shadow(0px 2px 6px 0px rgba(0,0,0,.12));
+  }
+}

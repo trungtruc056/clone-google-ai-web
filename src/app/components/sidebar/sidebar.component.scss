@@ -1,0 +1,125 @@
+@import "../../../assets/styles/color";
+@import "../../../assets/styles/mixin";
+
+.sidebar-block {
+  left: auto;
+  position: fixed;
+  right: auto;
+  top: 209px;
+  width: 15.1388888889%;
+  background-color: transparent;
+  border: 0;
+  bottom: auto;
+  box-shadow: none;
+  max-width: 232px;
+  padding: 0 0 0 14px;
+  box-sizing: border-box;
+  max-height: 460px;
+  overflow-y: auto;
+
+  .sidebar-heading {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+
+    &.mobile {
+      display: none;
+    }
+  }
+
+  .sidebar-menu-list {
+    display: block;
+    background-color: #fff;
+    padding: 0 0 24px;
+
+    a {
+      font-size: 14px;
+      line-height: 24px;
+      display: block;
+      padding-top: 16px;
+      padding-left: 14px;
+      text-align: left;
+      text-decoration: none;
+      color: $text-color;
+      border-left: 2px solid $border-table;
+      position: relative;
+
+      &.active {
+        color: #202124;
+
+        &:before {
+          background: #1a73e8;
+          bottom: 0;
+          content: "";
+          left: -2px;
+          position: absolute;
+          top: 15px;
+          width: 2px;
+        }
+      }
+
+      &:first-child {
+        padding-top: 0;
+
+        &:before {
+          top: 0;
+        }
+      }
+
+      &:hover {
+        color: $main-color;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &.responsive {
+    z-index: 3;
+    position: fixed;
+    top: 129px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    max-width: none;
+    padding-left: 32px;
+    background-color: #fff;
+    @include box-shadow(0 2px 6px 0 rgba(0,0,0,.12));
+
+    @media(max-width: 768px) {
+      top: 122px;
+    }
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      height: 50px;
+      margin-left: -14px;
+      padding-right: 12px;
+
+      i {
+        color: $main-color;
+      }
+    }
+
+    .sidebar-menu-list {
+      display: none;
+    }
+
+    .sidebar-menu-list.show {
+      display: block;
+    }
+  }
+}

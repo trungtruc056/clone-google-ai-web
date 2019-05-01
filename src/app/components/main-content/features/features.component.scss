@@ -1,0 +1,74 @@
+@import "../../../../assets/styles/color";
+
+.features-component {
+  .features-table {
+    table {
+      width: 100%;
+      font-size: 16px;
+      line-height: 26px;
+      border: 1px solid $border-color;
+      font-weight: 400;
+      font-family: 'Google Sans', sans-serif;
+
+      thead {
+        tr {
+          th {
+            width: 250px;
+            padding: 20px 24px;
+            font-size: 18px;
+            line-height: 28px;
+            border-left: 1px solid $border-table;
+
+            @media (max-width: 1279px) {
+              width: 160px;
+            }
+
+            &:first-child {
+              width: auto;
+              border-left: 0;
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &:nth-child(odd) {
+            background-color: #f8f9fa;
+          }
+
+          th {
+            font-size: 13px;
+            line-height: 17px;
+            padding: 15px 24px;
+            text-transform: uppercase;
+            text-align: left;
+            vertical-align: middle;
+          }
+
+          td {
+            font-size: 16px;
+            line-height: 26px;
+            padding: 15px 24px;
+            text-align: left;
+            vertical-align: middle;
+            border-left: 1px solid $border-table;
+
+            &:first-child {
+              width: auto;
+              border-left: 0;
+            }
+          }
+
+          td.check-mark {
+            text-align: center;
+          }
+        }
+
+        tr.row-sub-head {
+          background-color: #e8eaed;
+        }
+      }
+    }
+  }
+}

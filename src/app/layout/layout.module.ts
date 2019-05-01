@@ -11,6 +11,7 @@ import {MenuSolutionsComponent} from "./header/header-menu/menu-solutions/menu-s
 import {FooterBottomComponent, FooterMainComponent} from "./footer";
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from "./footer/footer.component";
+import { HeaderMobileComponent } from './header/header-mobile/header-mobile.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {FooterComponent} from "./footer/footer.component";
     MenuPricingComponent,
     MenuGetStartedComponent,
     FooterMainComponent,
-    FooterBottomComponent
+    FooterBottomComponent,
+    HeaderMobileComponent
   ],
   exports: [
     HeaderComponent,

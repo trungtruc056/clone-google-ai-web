@@ -1,0 +1,28 @@
+@import "../../../../assets/styles/mixin";
+@import "../../../../assets/styles/color";
+
+.header-action {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 64px;
+  justify-content: space-between;
+
+  .header-action-left {
+    a {
+      font-family: "Google Sans", sans-serif;
+      font-size: 20px;
+      line-height: 26px;
+      color: #5f6368;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+
+  .header-action-right {
+    a {
+      text-transform: initial;
+      font-weight: 400;
+    }
+  }
+}
